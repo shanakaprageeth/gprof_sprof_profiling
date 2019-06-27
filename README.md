@@ -38,4 +38,4 @@ Please refer to shell scripts for comments about each shell commands.
 
 ## Acknowledgments
 
-* Ipay my gratitute to tutorialspoint.com for Gprof tutorial (https://www.tutorialspoint.com/unix_commands/gprof.htm)
+I pay my gratitute to [tutorialspoint.com](https://www.tutorialspoint.com/unix_commands/gprof.htm) for Gprof tutorial 
