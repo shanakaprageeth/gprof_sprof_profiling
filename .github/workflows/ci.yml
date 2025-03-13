@@ -13,7 +13,7 @@ jobs:
       - 
         name: Install dependencies
         run: |
-          sudo apt-get install gcc make gprof sprof -y 
+          sudo apt-get install gcc make -y 
       - 
         name: Test Ubuntu Container
         run: |
