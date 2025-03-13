@@ -9,5 +9,6 @@ set -e
 make all
 ./gprof_binary.sh gprof_test_program out
 cat out/analysis.out
+set +e
 ./sprof_binary.sh sprof_test_program libdemo.so.1 out
 make clean
