@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+
+jobs:
+  ubuntu-dpdk:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Checkout repo
+        uses: actions/checkout@v4
+      - 
+        name: Install dependencies
+        run: |
+          sudo apt-get install gcc make -y 
+      - 
+        name: Test Ubuntu Container
+        run: |
+          ./ci_tests.sh
+          
