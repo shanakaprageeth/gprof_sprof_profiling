@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+
+jobs:
+  ubuntu-dpdk:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Checkout repo
+        uses: actions/checkout@v4
+      - 
+        name: Install dependencies
+        run: |
+          sudo apt-get install gcc make gprof sprof -y 
+      - 
+        name: Test Ubuntu Container
+        run: |
+          make all
+          ./gprof_binary.sh gprof_test_program out
+          cat out/analysis.out
+          ./sprof_binary.sh sprof_test_program
+          
