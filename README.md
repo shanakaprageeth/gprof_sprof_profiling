@@ -1,4 +1,4 @@
-![Docker build](https://github.com/shanakaprageeth/gprof_sprof_profiling/actions/workflows/.ci.yml/badge.svg?branch=master)
+![build](https://github.com/shanakaprageeth/gprof_sprof_profiling/actions/workflows/ci.yml/badge.svg?branch=master)
 
 # Profiling Test
 
